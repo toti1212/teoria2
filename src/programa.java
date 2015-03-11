@@ -15,8 +15,8 @@ public class programa {
 
     String [] validos = new String [] { "1", "3,14", "1.000", "-5", " - 4,6 ", " 5.000,8", " 500 ", "+2 " } ;
 
-    String [] invalidos = new String [] {"abcdef","  123abc", "123abc", "<>9io", "+",
-            "+-10", "10.","67 89","", "123.13,05", "eˆ2", " 3, " , "252,12,12"};
+    String [] invalidos = new String [] {"abcdef","  123abc", "123abc", "<>9io", "+", "1125,54.125",
+            "+-10", "10.","67 89","", "123.13,05", "eˆ2", " 3, " , "252,12,12", "123.13,05.36", "125,5.2"};
 
     System.out.println("\nValidos: =>" +  validos.length);
 
@@ -83,6 +83,10 @@ public class programa {
           case '.':
             flagPunto = true;
             flagComa = false;
+
+            if (flagDecimalPart) {
+               hayError = true;
+            }
 
             if (!finalizo) {
                 contador = 3;
