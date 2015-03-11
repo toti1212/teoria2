@@ -1,3 +1,5 @@
+package org.ucu.teoria2.actividad1;
+
 /**
  * Actividad 1, Teorica de la Computación y sistemas formales.
  * Grupo 6 - Pancreas.
