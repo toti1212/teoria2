@@ -10,7 +10,7 @@ package org.ucu.teoria2.actividad1;
  *
  */
 
-public class programa {
+public class actividad1 {
 
 
   public static void main(String args[]) {
